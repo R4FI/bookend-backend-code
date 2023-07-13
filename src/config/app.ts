@@ -2,8 +2,7 @@
 /* eslint-disable no-unreachable */
 import express, { Application, NextFunction, Request, Response } from 'express';
 import cors from 'cors';
-
-// import routes from '../app/routes';
+import routes from '../app/routes';
 import httpStatus from 'http-status';
 import globalErrorHandler from '../app/middleware/globalErrorHandler';
 
@@ -16,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // application route
 // console.log(process.env)
-// app.use('/api/v1', routes);
+app.use('/api/v1', routes);
 
 // app.get('/', (req: Request, res: Response,next) => {
 // //  throw new ApiError(400,'hello world')
