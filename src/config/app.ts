@@ -14,13 +14,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // application route
-// console.log(process.env)
+
 app.use('/api/v1', routes);
 
-// app.get('/', (req: Request, res: Response,next) => {
-// //  throw new ApiError(400,'hello world')
-//  next('hello')
-// })
 // global error handler
 // eslint-disable-next-line no-undef
 app.use(globalErrorHandler);
@@ -33,9 +29,9 @@ app.use((req: Request, res: Response, next: NextFunction) => {
     erroMessages: [
       {
         path: req.originalUrl,
-        message: 'Api not found'
-      }
-    ]
+        message: 'Api not found',
+      },
+    ],
   });
 });
 export default app;

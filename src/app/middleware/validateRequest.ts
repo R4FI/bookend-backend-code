@@ -9,7 +9,7 @@ const validateRequest =
         body: req.body,
         query: req.query,
         params: req.params,
-        cookies: req.cookies
+        cookies: req.cookies,
       });
       return next();
     } catch (error) {

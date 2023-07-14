@@ -14,6 +14,21 @@
             "date": 1689267639141,
             "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-13-07-2023-23.log",
             "hash": "f1d186ac838337ecde4139846b851166343cd13154d10affe41a30ec62b3d5ee"
+        },
+        {
+            "date": 1689320748292,
+            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-14-07-2023-13.log",
+            "hash": "adb95523b3b95ced09f4bef24aaaa6fed53beeeff5041252d8fb5cd69a0d73b9"
+        },
+        {
+            "date": 1689322623741,
+            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-14-07-2023-14.log",
+            "hash": "8a53d79ad893a49165fdd5c8d74dbb6381a9af1e49213a7a4b7e6a999dededa6"
+        },
+        {
+            "date": 1689325592277,
+            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-14-07-2023-15.log",
+            "hash": "bce9d396bd4572fc987870df67ddf6e66ec577e0e7765283915b9035ae3d9cb5"
         }
     ],
     "hashType": "sha256"
