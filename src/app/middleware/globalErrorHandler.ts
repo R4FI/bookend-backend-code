@@ -3,7 +3,6 @@
 import { ErrorRequestHandler, NextFunction, Request, Response } from 'express';
 import { Error } from 'mongoose';
 import config from '../../config';
-
 import handleValidationError from '../../errors/handleValidationError';
 import { IGenericErrorMessage } from '../../interfaces/error';
 import { errorLogger } from '../../shared/logger';
@@ -16,7 +15,7 @@ const globalErrorHandler: ErrorRequestHandler = (
   error,
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) => {
   config.env === 'development'
     ? console.log(`🐱‍🏍 globalErrorHandler ~~`, error)
@@ -48,8 +47,8 @@ const globalErrorHandler: ErrorRequestHandler = (
       ? [
           {
             path: '',
-            message: error?.message
-          }
+            message: error?.message,
+          },
         ]
       : [];
   } else if (error instanceof Error) {
@@ -58,8 +57,8 @@ const globalErrorHandler: ErrorRequestHandler = (
       ? [
           {
             path: '',
-            message: error?.message
-          }
+            message: error?.message,
+          },
         ]
       : [];
   }
@@ -67,7 +66,7 @@ const globalErrorHandler: ErrorRequestHandler = (
     success: false,
     message,
     errorMessages,
-    stack: config.env !== 'production' ? error?.stack : undefined
+    stack: config.env !== 'production' ? error?.stack : undefined,
   });
   next();
 };
