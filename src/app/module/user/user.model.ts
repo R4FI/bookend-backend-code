@@ -23,6 +23,24 @@ const userSchema = new Schema<IUser, Record<string, never>>(
       required: true,
       unique: true,
     },
+    wishlist: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Books', // Assuming your book model is named 'Books'
+      },
+    ],
+    currentlyReading: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Books',
+      },
+    ],
+    finishedReading: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Books',
+      },
+    ],
   },
   {
     timestamps: true,
@@ -33,7 +51,7 @@ const userSchema = new Schema<IUser, Record<string, never>>(
 );
 userSchema.statics.isUserExist = async function (
   email: string,
-): Promise<Pick<IUser, 'email' | 'password' | 'role'> | null> {
+): Promise<Pick<IUser, 'email' | 'password' | 'name'> | null> {
   return await User.findOne({ email }, { email: 1, password: 1, role: 1 });
 };
 userSchema.statics.isPasswordMatched = async function (

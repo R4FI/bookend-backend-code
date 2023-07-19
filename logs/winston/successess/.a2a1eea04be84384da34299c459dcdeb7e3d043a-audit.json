@@ -6,34 +6,39 @@
     "auditLog": "G:\\Assignment\\Backend\\logs\\winston\\successess\\.a2a1eea04be84384da34299c459dcdeb7e3d043a-audit.json",
     "files": [
         {
-            "date": 1689412754935,
-            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-15-07-2023-15.log",
-            "hash": "fe44496856cff181b396f20e32a50f1ac22e7105d30db532997b2e6336c23f27"
+            "date": 1689704805430,
+            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-19-07-2023-00.log",
+            "hash": "98882bcc30c371002d8a29d096bbb4f7dc43945740978f9ef33ac9ff1bc62036"
         },
         {
-            "date": 1689437948170,
-            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-15-07-2023-22.log",
-            "hash": "1ac3d84458f7c09e5c49406d982f7a8ae9392f85854de881b1eab237e7df1077"
+            "date": 1689708291547,
+            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-19-07-2023-01.log",
+            "hash": "76e6cd820d017bab573dab97ba7b9962cbc8284383069a124d83304ed6f498d1"
         },
         {
-            "date": 1689442893781,
-            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-15-07-2023-23.log",
-            "hash": "988dbed6e09ca2495c0e1fa952204435948593c81c72f2f0a2da207e669d7e43"
+            "date": 1689710601350,
+            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-19-07-2023-02.log",
+            "hash": "e733705e04170f26b06b35bf69bb296d87624965db160b850db0d9e2e3b4f16d"
         },
         {
-            "date": 1689451588482,
-            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-16-07-2023-02.log",
-            "hash": "f9cedd8215ed4458283f91b3e20676ae7b15d673176eacf0156c556031f740ba"
+            "date": 1689715056079,
+            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-19-07-2023-03.log",
+            "hash": "0b2473e9650d6ecbeda191eb669b462f20506946d0531a9429f1ba40783734c8"
         },
         {
-            "date": 1689454946747,
-            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-16-07-2023-03.log",
-            "hash": "4ff480c0b5788b380886952956a73a1ebb04d52ba5375c175840aa6d9237770a"
+            "date": 1689758564419,
+            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-19-07-2023-15.log",
+            "hash": "4d1b1cd0f711041ed888cc3ab96293e4b7de0c023897d9076a72144602d22401"
         },
         {
-            "date": 1689458643359,
-            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-16-07-2023-04.log",
-            "hash": "61d7854940c7e88be2fb883fcd6008ac4836bfd5fd97cec09eb2683bfed0b675"
+            "date": 1689783070902,
+            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-19-07-2023-22.log",
+            "hash": "afc7abeecb82ac76aa7f2803d8627f1f1d97e2290e9975df1281830ff2226dcb"
+        },
+        {
+            "date": 1689786157977,
+            "name": "G:\\Assignment\\Backend\\logs\\winston\\successess\\phu-19-07-2023-23.log",
+            "hash": "ad0a30f6958ca654fa69f756531843d7b6d75c4dca83877b237c82b657a1df8b"
         }
     ],
     "hashType": "sha256"

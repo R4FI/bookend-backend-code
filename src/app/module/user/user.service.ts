@@ -1,3 +1,4 @@
+import { IBook } from '../books/books.interface';
 import { IUser } from './user.interface';
 import { User } from './user.model';
 

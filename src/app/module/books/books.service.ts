@@ -2,7 +2,6 @@ import { IBook } from './books.interface';
 import { Books } from './book.model';
 import ApiError from '../../../errors/apiError';
 import httpStatus from 'http-status';
-import { ObjectId } from 'mongodb';
 
 const createBook = async (bookData: IBook) => {
   const result = await Books.create(bookData);
@@ -17,7 +16,13 @@ const getSingleBook = async (id: string) => {
   return result;
 };
 const updateBook = async (id: string, payload: IBook) => {
-  const result = await Books.findByIdAndUpdate({ _id: id }, payload);
+  const result = await Books.findByIdAndUpdate(
+    { _id: id },
+    payload,
+    // { _id: id },
+    // { $set: payload },
+    // { new: true },
+  );
   return result;
 };
 const deleteBook = async (id: string) => {

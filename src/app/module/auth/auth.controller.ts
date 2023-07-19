@@ -8,18 +8,11 @@ import config from '../../../config';
 const loginUser = catchAsync(async (req: Request, res: Response) => {
   const { ...loginData } = req.body;
   const result = await AuthService.loginUser(loginData);
-  const { accessToken } = result;
-
-  // Set access token into cookie
-  const cookieOptions = {
-    secure: config.env === 'production',
-    httpOnly: true,
-  };
-  res.cookie('accessToken', accessToken, cookieOptions);
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
     message: 'User logged in successfully',
+    data: result,
   });
 });
 

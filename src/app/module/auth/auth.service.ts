@@ -1,9 +1,5 @@
 import httpStatus from 'http-status';
-import {
-  ILoginUser,
-  ILoginUserResponse,
-  IRefreshTokenResponse,
-} from './auth.interface';
+import { ILoginUser, ILoginUserResponse } from './auth.interface';
 import { Secret } from 'jsonwebtoken';
 import config from '../../../config';
 import { jwtHelpers } from '../../../helpers/jwt.helper';
@@ -27,15 +23,18 @@ const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   }
 
   //create access token
-  const { email: userEmail, role } = isUserExist;
+  const { email: userEmail, name } = isUserExist;
   const accessToken = jwtHelpers.createToken(
-    { userEmail, role },
+    { userEmail, name },
     config.jwt.secret as Secret,
     config.jwt.jwt_expires_in as string,
   );
-  return {
+  const loginResponse: ILoginUserResponse = {
+    name,
+    email: userEmail,
     accessToken,
   };
+  return loginResponse;
 };
 
 export const AuthService = {

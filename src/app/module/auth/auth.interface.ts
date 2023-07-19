@@ -6,6 +6,8 @@ export type ILoginUser = {
 };
 
 export type ILoginUserResponse = {
+  name: string;
+  email: string;
   accessToken: string;
   refreshToken?: string;
 };

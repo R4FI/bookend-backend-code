@@ -23,6 +23,9 @@ const bookSchema = new Schema<IBook, Record<string, never>>(
     reviews: {
       type: [String],
     },
+    userEmail: {
+      type: String,
+    },
   },
   {
     timestamps: true,
